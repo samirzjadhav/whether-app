@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Jost", serif;
 }
 
 body {
@@ -72,10 +74,37 @@ body {
   margin-top: -10px;
 }
 
+.whether p {
+  font-size: 18px;
+}
+
+svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 14px;
+}
+
 .details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 20px;
+  margin-top: 28px;
+}
+
+.col {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin-top: 50px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 14px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
 }
